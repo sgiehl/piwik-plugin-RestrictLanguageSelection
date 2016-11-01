@@ -32,7 +32,7 @@ class RestrictLanguageSelection extends Plugin
             return;
         }
 
-        $setting = new SystemSettings();
+        $setting = new Settings();
         $availableLanguages = $setting->availableLanguages->getValue();
         if (!empty($availableLanguages)) {
             $languages = $availableLanguages;
