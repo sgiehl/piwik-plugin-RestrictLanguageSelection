@@ -13,7 +13,7 @@ use Piwik\Settings\Setting;
 use Piwik\Settings\FieldConfig;
 
 /**
- * Defines Settings for ActivityLog.
+ * Defines Settings for RestrictLanguageSelection.
  */
 class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 {
