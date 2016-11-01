@@ -1,0 +1,30 @@
+{
+    "name": "RestrictLanguageSelection",
+    "version": "3.0.0",
+    "description": "Allows you to modify the list of available languages in language selector.",
+    "keywords": ["language","i18n"],
+    "license": "GPL v3+",
+    "homepage": "http://github.com/sgiehl/piwik-plugin-RestrictLanguageSelection",
+    "require": {
+        "piwik": ">=3.0.0-b1,<4.0.0-b1",
+        "php": ">=5.3.0"
+    },
+    "support": {
+        "email": "stefan@piwik.org",
+        "issues": "https://github.com/sgiehl/piwik-plugin-RestrictLanguageSelection/issues",
+        "wiki": "https://github.com/sgiehl/piwik-plugin-RestrictLanguageSelection/issues",
+        "source": "https://github.com/sgiehl/piwik-plugin-RestrictLanguageSelection/issues"
+    },
+    "authors": [
+        {
+            "name": "Stefan Giehl",
+            "email": "stefan@piwik.org",
+            "homepage": "http://github.com/sgiehl"
+        }
+    ],
+    "donate": {
+        "paypal": "stefangiehl@web.de",
+        "flattr": "https://flattr.com/thing/3787742/sgiehlpiwik-plugin-RestrictLanguageSelection-on-GitHub",
+        "bitcoin": "1NxyWNfsjSNQULGxPVJUkgf8D3rpdJEgM6"
+    }
+}
