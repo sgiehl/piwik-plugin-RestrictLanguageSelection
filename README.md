@@ -8,7 +8,7 @@ This plugin allows you to restrict the languages available in language selectors
 
 ### Requirements
 
-[Piwik](https://github.com/piwik/piwik) 3.0.0-b1 or higher is required.
+[Piwik](https://github.com/piwik/piwik) 2.16.0 or higher is required.
 
 ## Support
 
