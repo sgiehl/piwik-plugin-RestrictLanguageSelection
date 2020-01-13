@@ -17,9 +17,9 @@ class RestrictLanguageSelection extends Plugin
     public static $disableRestrictions = false;
 
     /**
-     * @see Piwik_Plugin::getListHooksRegistered
+     * @see Piwik_Plugin::registerEvents
      */
-    public function getListHooksRegistered()
+    public function registerEvents()
     {
         return array(
             'LanguageManager.getAvailableLanguages' => 'modifyAvailableLanguages',
