@@ -1,8 +1,8 @@
 <?php
 /**
- * Piwik - Open source web analytics
+ * Matomo - Open source web analytics
  *
- * @link http://piwik.org
+ * @link https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 namespace Piwik\Plugins\RestrictLanguageSelection;
@@ -22,7 +22,7 @@ class RestrictLanguageSelection extends Plugin
     public function registerEvents()
     {
         return array(
-            'LanguageManager.getAvailableLanguages' => 'modifyAvailableLanguages',
+            'LanguagesManager.getAvailableLanguages' => 'modifyAvailableLanguages',
         );
     }
 
@@ -33,6 +33,11 @@ class RestrictLanguageSelection extends Plugin
         }
 
         $setting = new SystemSettings();
+
+        if(!$setting->useRestriction->getValue()) {
+            return; // setting disabled
+        }
+
         $availableLanguages = $setting->availableLanguages->getValue();
         if (!empty($availableLanguages)) {
             $languages = $availableLanguages;

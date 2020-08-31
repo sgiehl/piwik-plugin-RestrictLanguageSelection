@@ -1,8 +1,8 @@
 <?php
 /**
- * Piwik - Open source web analytics
+ * Matomo - Open source web analytics
  *
- * @link http://piwik.org
+ * @link https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 namespace Piwik\Plugins\RestrictLanguageSelection;
@@ -20,19 +20,26 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     /** @var Setting */
     public $availableLanguages;
 
+    /** @var Setting */
+    public $useRestriction;
+
     protected function init()
     {
+        $this->useRestriction = $this->makeSetting('useLanguageRestriction', false, FieldConfig::TYPE_BOOL, function (FieldConfig $field) {
+            $field->title = Piwik::translate('RestrictLanguageSelection_UseRestriction');
+            $field->uiControl = FieldConfig::UI_CONTROL_CHECKBOX;
+        });
         $this->availableLanguages = $this->createAvailableLanguagesSetting();
     }
 
     private function createAvailableLanguagesSetting()
     {
-        return $this->makeSetting('availableLanguages', $default = false, FieldConfig::TYPE_ARRAY, function (FieldConfig $field) {
+        return $this->makeSetting('availableLanguages', $default = [], FieldConfig::TYPE_ARRAY, function (FieldConfig $field) {
 
             $languages = array();
 
             RestrictLanguageSelection::$disableRestrictions = true;
-            $api = new API(); // not using getInstance as that would hold a precached, already resticted language list
+            $api = new API(); // not using getInstance as that would hold a precached, already restricted language list
             $languageInfos = $api->getAvailableLanguagesInfo();
             RestrictLanguageSelection::$disableRestrictions = false;
 
@@ -43,6 +50,7 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
             $field->title = Piwik::translate('RestrictLanguageSelection_RestrictLanguages');
             $field->uiControl = FieldConfig::UI_CONTROL_MULTI_SELECT;
             $field->availableValues = $languages;
+            $field->condition = 'useLanguageRestriction==1';
         });
     }
 }
