@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "請在可用語言列表內，選擇你想要使用的語言。",
+        "UseRestriction": "使用語言限制"
+    }
+}
