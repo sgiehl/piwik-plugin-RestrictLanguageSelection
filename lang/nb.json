@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "Velg språkene du vil ha tilgjengelig i språkvelgerne.",
+        "UseRestriction": "Bruk språkbegrensning"
+    }
+}
