@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "Silakan pilih bahasa yang Anda inginkan agar tersedia di pemilih bahasa.",
+        "UseRestriction": "Gunakan pembatasan bahasa"
+    }
+}
