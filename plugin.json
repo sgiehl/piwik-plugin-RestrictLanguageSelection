@@ -1,6 +1,6 @@
 {
     "name": "RestrictLanguageSelection",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "description": "Allows you to modify the list of available languages in language selector.",
     "keywords": ["language","i18n"],
     "license": "GPL v3+",
