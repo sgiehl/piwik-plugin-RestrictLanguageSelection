@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "Kies de talen die u beschikbaar wilt hebben in de taalkiezers.",
+        "UseRestriction": "Gebruik taalbeperking"
+    }
+}
