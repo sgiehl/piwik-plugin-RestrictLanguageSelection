@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "Por favor elija los idiomas que desea tener disponibles en los selectores de idioma.",
+        "UseRestriction": "Usar la restricción del idioma"
+    }
+}
