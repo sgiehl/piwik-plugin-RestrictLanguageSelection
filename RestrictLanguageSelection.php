@@ -1,8 +1,9 @@
 <?php
+
 /**
  * Matomo - Open source web analytics
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
@@ -22,9 +23,9 @@ class RestrictLanguageSelection extends Plugin
      */
     public function registerEvents()
     {
-        return array(
+        return [
             'LanguagesManager.getAvailableLanguages' => 'modifyAvailableLanguages',
-        );
+        ];
     }
 
     public function modifyAvailableLanguages(&$languages)
@@ -35,7 +36,7 @@ class RestrictLanguageSelection extends Plugin
 
         $setting = new SystemSettings();
 
-        if(!$setting->useRestriction->getValue()) {
+        if (!$setting->useRestriction->getValue()) {
             return; // setting disabled
         }
 

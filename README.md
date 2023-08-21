@@ -6,7 +6,7 @@ This plugin allows you to restrict the languages available in language selectors
 
 ### Requirements
 
-[Matomo](https://github.com/matomo-org/matomo) 4.0.0-b1 or higher is required.
+[Matomo](https://github.com/matomo-org/matomo) 5.0.0-b1 or higher is required.
 
 ## Support
 
