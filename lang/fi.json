@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "Valitse kielet, jotka haluat olevan saatavilla kielivalinnassa.",
+        "UseRestriction": "Käytä kielirajoitusta"
+    }
+}
