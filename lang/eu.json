@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "Aukeratu zein hizkuntzak egon behar duten erabilgarri hizkuntza-hautatzaileetan.",
+        "UseRestriction": "Erabili hizkuntzak mugatzea"
+    }
+}
