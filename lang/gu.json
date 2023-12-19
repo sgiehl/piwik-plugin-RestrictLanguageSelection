@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "કૃપા કરીને ભાષા પસંદગીકારોમાં તમને ઉપલબ્ધ હોય તેવી ભાષાઓ પસંદ કરો.",
+        "UseRestriction": "ભાષા પ્રતિબંધનો ઉપયોગ કરો"
+    }
+}
