@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "Lūdzu, izvēlieties valodas, kuras vēlaties padarīt pieejamas valodu izvēlnē.",
+        "UseRestriction": "Izmantot valodas ierobežojumu"
+    }
+}

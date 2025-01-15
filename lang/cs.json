@@ -1,1 +1,6 @@
-{}
+{
+    "RestrictLanguageSelection": {
+        "RestrictLanguages": "Vyberte si prosím jazyky, které chcete mít k dispozici ve výběrech jazyků.",
+        "UseRestriction": "Použití jazykového omezení"
+    }
+}
