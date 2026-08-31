@@ -1,5 +1,9 @@
 ## Changelog
 
+__6.0__
+
+* Compatibility with Matomo 6
+
 __5.0__
 
 * Compatibility with Matomo 5
