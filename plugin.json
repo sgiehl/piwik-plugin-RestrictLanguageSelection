@@ -1,13 +1,13 @@
 {
     "name": "RestrictLanguageSelection",
-    "version": "5.0.0",
+    "version": "6.0.0",
     "description": "Allows you to modify the list of available languages in language selector.",
     "keywords": ["language","i18n"],
     "license": "GPL v3+",
     "homepage": "https://github.com/sgiehl/piwik-plugin-RestrictLanguageSelection",
     "require": {
-        "matomo": ">=5.0.0-b1,<6.0.0-b1",
-        "php": ">=7.2.0"
+        "matomo": ">=6.0.0-b1,<7.0.0-b1",
+        "php": ">=8.1.0"
     },
     "support": {
         "email": "stefan@matomo.org",
